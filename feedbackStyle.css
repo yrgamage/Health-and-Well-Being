@@ -1,0 +1,381 @@
+*{
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+	background: #E7E6F7;
+}
+
+/* -----------------navigation part--------------------- */
+.container1 nav{
+    
+    display: flex;
+    align-items: right;
+    flex-wrap: wrap;  /* Allow navigation items to wrap */
+    overflow: hidden;  /* Hide overflowing content */
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    background: rgba(0,0,0,0.2);
+}
+
+nav ul li{
+    display: inline-block;  /* Display navigation items as inline-block */
+    list-style: none;  /* Remove default list styles */
+    margin: 10px 20px;
+}
+
+.action-nav{
+    color: #fb9779;  /* Color for indicate page in navigation bar */
+}
+
+ ul li a{
+    color:#E7E6F7;
+    text-decoration: none;  /* Remove underline from links */
+    font-size: 18px;
+    position: relative;  /* Relative positioning */
+}
+
+.container1 nav ul li a::after{
+    content: '';
+    width:0;
+    height:3px;
+    background: #ea9846;
+    position: absolute;  /* Absolute positioning */
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.container1 nav ul li a:hover::after{
+    width: 100%;
+}
+
+#logo{
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.logo-img{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 100%;  /* Circular border radius */
+}
+
+#header_nav{
+    width: 100%;
+    max-height: fit-content;
+    background-color: #426FAF;
+    background-size: cover;
+    background-position: center;  /* Centered background */
+}
+
+.container1{
+    padding: 5px 0%;  /* Padding for the container1 */
+}
+
+.container2{
+    padding: 10px 5%;  /* Padding for the container2 */
+}
+
+
+/* footer part */
+.footer-h3{
+    color: #E7E6F7;
+    margin: 5%;
+}
+
+#header-footer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;  /* Specify stacking order */
+    margin: 0;
+    padding: 2%;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #294769;
+    backdrop-filter: blur(5px);  /* Apply blur effect */
+}
+
+.footer-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fb9779;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#profile img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 100%;
+}
+
+#profile a{
+    text-decoration: none;
+    color: var(--theme-black);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#profile:hover{
+    scale: 1.1 !important;     /*increase the size of the button*/
+}
+
+
+
+
+/* --------------------Social Icons Style--------------*/
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #E7E6F7;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 1.5em;
+    color: #294769;
+    opacity: 0.9;  /* Opacity for icons */
+}
+.socialIcons a:hover{
+    background-color: #294769;
+    transition: 0.5s;
+
+}
+.socialIcons a:hover i{
+    color: #E7E6F7;
+    transition: 0.5s;
+
+}
+
+
+
+
+
+/* ----------feedback------------- */
+
+
+.container-feedback-form{
+    margin-top: 7%;
+    margin-bottom: 3%;
+    max-width: 55%;
+    margin-left: 23%;
+    background-color: #294769;
+    color: #E7E6F7;
+}
+
+.container-feedback-form .form-control{
+    padding: 5%;
+    background-color: #294769;    /*----input test box color-----*/
+    border-color: #fb9779;
+    border-width: 2px;
+	border-radius: 1rem;
+    color: #E7E6F7;
+    text-align: left;
+    align-items: center;
+}
+
+.container-feedback-form form{
+    padding: 14%;   
+    background-color: #294769; 
+	box-sizing: border-box;
+}
+
+.container-feedback-form form .row{
+    margin-bottom: 5%;
+}
+
+.container-feedback-form .row .form-group {
+    margin-bottom: 8%;
+    margin-top: -10%;
+    margin: 5%;
+    text-align: center;
+}
+
+.form-group{
+    align-items: center;
+}
+
+.container-feedback-form .row .btnFeedback{
+    width: 35%;
+    border: none;
+    border-radius: 2rem;
+    padding: 2.5%;
+    margin: 7%;
+    background: #fb9779;
+    color: #294769;	
+}
+
+.container-feedback-form h2{
+	text-align: center;
+	color: #fff;
+	padding: auto;
+	
+}
+
+.container-feedback-form h3{
+	text-align: center;
+	color: #fff;	
+}
+
+.container-feedback-form h4{
+	text-align: center;
+	color: #fff;	
+}
+
+.container-feedback-form .btnFeedback{
+	width: 50%;
+	border: none;
+	border-radius: 1rem;
+	padding: 1.5%;
+}
+
+.container-feedback-form  .Preview_btnFeedback{
+	width: 50%;
+	border: none;
+	border-radius: 2rem;
+	padding: 2%;
+	margin-left: 155px;
+	background-color: #E7E6F7;
+    color: #294769;
+}
+
+.font-style{
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+}
+
+.option-style{
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+}
+
+.font-style::after{
+    content: "*";
+    color: red;
+    font-size: 20px;
+}
+
+.btnFeedback:hover{
+    background-color: #294769;
+    transition: 0.5s;
+}
+
+
+/* ----------------Style for radio label-------------- */
+input[type=radio]{
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1rem;
+    width: 14%;
+}
+
+.radio_lable{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.radio_set{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* --------------Style for preview button-------------- */
+.Preview_btnFeedback {
+    background-color: #426FAF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.Preview_btnFeedback:hover {
+    background-color: #426FAF;
+}
+
+
+/*------------------ Style for submit and reset buttons------------ */
+.btnFeedback {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btnFeedback:hover {
+    scale: 1.1 !important;    
+}
+
+
+/*------------- CSS styles for the preview------------------- */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 45%; /* Could be more or less, depending on screen size */
+}
+
+/*------------------ Close Button--------------- */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*------------------ Styling for the preview content--------------- */
+#previewFeedbackContent p {
+    margin: 10px 0;
+    color: black;
+    font-size: 18px;
+}

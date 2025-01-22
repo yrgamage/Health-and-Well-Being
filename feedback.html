@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>health and well-being</title>  <!-- Title of the document -->
+
+    <link rel="stylesheet" href="feedbackStyle.css">  <!-- Link to external CSS file (feedbackStyle.css) -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  <!-- Link to Bootstrap CSS -->
+
+ 
+    <script src="https://kit.fontawesome.com/e6973791d6.js" crossorigin="anonymous"></script>  <!-- Link to Font Awesome script -->
+    
+</head>
+
+
+<body>
+    
+    <div id="header_nav">
+        <div class="container1">
+            <nav>
+                <ul>
+                    <li id="logo" style="float: left;"><a href="splashscreen.html" ><img class="logo-img" src="images/logo1.jpg" alt="logo img"></a></li>
+                    <li><a href="home.html" ><i class="fa-regular fa-house" style="color: #f8fadb;"></i> Home</a></li>
+                    <li><a href="gallery.html" ><i class="fa-brands fa-envira" style="color: #f8fadb;" ></i> Gallery</a></li>
+                    <li><a href="index.html" ><i class="fa-solid fa-cart-shopping" style="color: #f8fadb;" ></i> Shop</a></li>
+                    <li><a href="profile.html" ><i class="fa-solid fa-user" style="color: #f8fadb;"></i> Profile</a></li>
+                    <li><a href="sitemap.html" ><i class="fa-solid fa-sitemap" style="color: #f8fadb;"></i> Sitemap</a></li>
+                    <li><a href="feedback.html" class="action-nav"><i class="fa-solid fa-comment" style="color: #f8fadb;"></i> Feedback</a></li>
+                    <li><a href="team.html" ><i class="fa-solid fa-address-card" style="color: #f8fadb;"></i> About us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container-feedback-form">
+            <!-- Feedback form -->
+            <form id="feedbackForm" action="https://formsubmit.co/harmanperera@gmail.com" method="POST">
+                <h2>Drop Us A Feedback</h2>
+                <div class="row">
+                    <br>
+                    <div class="form-group">
+                        <label for="name" class="font-style">Enter your name</label>
+                        <input type="text" id="name" class="form-control" name="Name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="font-style">Enter your email</label>
+                        <input type="email" id="email" class="form-control" name="Email"  placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <h4 class="font-style">Was this your first time visiting?</h4>
+						<div class="radio_set">
+							<div class="radio_lable"><input type="radio" name="firstTimeVisiting" value="Yes" id="first-yes" required><label for="yes">Yes</label></div>
+							<div class="radio_lable"><input type="radio" name="firstTimeVisiting" value="No" id="first-no" required><label for="no">No</label></div>
+						</div>
+                    </div>
+                    
+                    <br>
+                    <div class="form-group">
+                        <h4 class="font-style">How satisfied are you with our service? Choose from 0 to 10. [ With 0 being "Not satisfied at all!" and 10 being "Extremely satisfied!" ]</h4>
+                        <br>
+						<div class="rating">
+							<div class="radio_lable"><input type="radio" name="rate" value="0" id="0" required><label for="0">0</label></div>
+							<div class="radio_lable"><input type="radio" name="rate" value="1" id="1" required><label for="1">1</label></div>
+							<div class="radio_lable"><input type="radio" name="rate" value="2" id="2" required><label for="2">2</label></div>
+							<div class="radio_lable"><input type="radio" name="rate" value="3" id="3" required><label for="3">3</label></div>
+							<div class="radio_lable"><input type="radio" name="rate" value="4" id="4" required><label for="4">4</label></div>
+							<div class="radio_lable"><input type="radio" name="rate" value="5" id="5" required><label for="5">5</label></div>
+							<div class="radio_lable"><input type="radio" name="rate" value="6" id="6" required><label for="6">6</label></div>
+							<div class="radio_lable"><input type="radio" name="rate" value="7" id="7" required><label for="7">7</label></div>
+							<div class="radio_lable"><input type="radio" name="rate" value="8" id="8" required><label for="8">8</label></div>
+							<div class="radio_lable"><input type="radio" name="rate" value="9" id="9" required><label for="9">9</label></div>
+							<div class="radio_lable"><input type="radio" name="rate" value="10" id="10" required><label for="10">10</label></div>
+						</div>
+                    </div>
+
+                    <br>
+                    <h4><label for="howFound" class="option-style">How did you find this website?</label></h4>
+                    <select id="howFound" name="howFound" class="form-control">
+                        <option value="facebook">Facebook</option>
+                        <option value="youtube">Youtube</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="twitter">Twitter</option>
+                    </select>
+                    <br>
+
+                    <h4><label for="deviceUsed" class="option-style">Device Used:</label></h4>
+                    <select id="deviceUsed" name="deviceUsed" class="form-control">
+                        <option value="phone">Phone</option>
+                        <option value="tablet">Tablet</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="desktop">Desktop</option>
+                    </select>
+                    <br>
+        
+                    <h4>Your overall comment on the experience</h4>
+                    <textarea id="comment" name="comment" class="form-control" placeholder="Your comment...." style="width: 100%; height: 150px; margin-bottom: 8px;"></textarea>
+                    <br>
+
+                    <div class="form-group">
+                        <h4>Was this website informative and easy to navigate through?</h4>
+						<div class="radio_set">
+							<div class="radio_lable"><input type="radio" name="informativeAndEasy" value="Yes" id="yes"><label for="yes">Yes</label></div>
+							<div class="radio_lable"><input type="radio" name="informativeAndEasy" value="No" id="no"><label for="no">No</label></div>
+						</div>
+                        <br>
+                    </div>
+        
+                    <h4>How do you like to see improvements on this website?</h4>
+                    <textarea id="improvements" name="improvements" class="form-control" placeholder="Write something...." style="width: 100%; height: 150px;margin-bottom: 8px;" ></textarea>
+                    <br>
+
+
+                </div>
+        
+
+
+
+				<!-- Preview Feedback button -->
+                <div class="row">
+                    <input class="Preview_btnFeedback" type="button" value="Preview Feedback" onclick="previewFeedback()" style="outline: none;">
+                </div>
+
+                <div class="row">
+                    <input type="reset" name="reset" class="btnFeedback" value="Reset" style="outline: none;">
+                    <input type="submit" name="submit" class="btnFeedback" value="Submit" style="outline: none;">
+                </div>
+
+                <!-- Previewing feedback -->
+                <div id="previewModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closePreviewModal()">&times;</span>
+                        <!-- Display preview feedback content here -->
+                        <div id="previewFeedbackContent"></div>
+                    </div>
+                </div>
+            </form>
+        </div>  
+        
+                
+        <!--footer section of the document-->
+        <div id="header-footer">
+            <div class="footer-container">
+                <div id="profile">
+                    <a target="_blank" href="pageEditor.html"><img src="images/keshadi.JPG" alt="Keshadi Perera "> <span>Keshadi Perera (Contributor)</span></a>
+                </div> 
+                <div class="footer-container-name">
+                    <h3 class="footer-h3">Health and well-being</h3>
+                    <p>&copy; Health and well-being is a collaborative website built by a group of students from IIT-2024</p>
+                </div>
+                <div class="footer-container-contact">
+                    <h3 class="footer-h3">Contact Us</h3>
+                    <div id="footer">
+                        <div class="footerContainer">
+                            <div class="socialIcons">
+                                <a href="twkp.perera@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100092984667049&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/keshadi_perera?igsh=enYzb3Jya3o0ZDNp&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

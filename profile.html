@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>health and well-being</title>
+
+    <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="profile.css">
+ 
+    <script src="https://kit.fontawesome.com/e6973791d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header_nav">
+        <div class="container1">
+            <nav>
+                <ul>
+					<li id="logo" style="float: left;"><a href="splashscreen.html" ><img class="logo-img" alt="logo" src="logo1.jpg"></a></li>
+                    <li><a href="home.html" ><i class="fa-regular fa-house" style="color: #f8fadb;"></i> Home</a></li>
+                    <li><a href="gallery.html" ><i class="fa-brands fa-envira" style="color: #f8fadb;" ></i> Gallery</a></li>
+                    <li><a href="index.html" ><i class="fa-solid fa-cart-shopping" style="color: #f8fadb;" ></i> Shop</a></li>
+                    <li><a href="profile.html" class="action-nav" ><i class="fa-solid fa-user" style="color: #f8fadb;"></i> Profile</a></li>
+                    <li><a href="sitemap.html" ><i class="fa-solid fa-sitemap" style="color: #f8fadb;"></i> Sitemap</a></li>
+                    <li><a href="feedback.html" ><i class="fa-solid fa-comment" style="color: #f8fadb;"></i> Comments</a></li>
+                    <li><a href="team.html" ><i class="fa-solid fa-address-card" style="color: #f8fadb;"></i> About us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <form action="https://formsubmit.co/yrgamage28@gmail.com" class="form step" method="post" >
+		<div class="page">
+			<div class="containerBox box" >
+				<div class="progressBar" >
+					<div class="progress-step progress-step-active" data-title="Step 1"></div>
+					<div class="progress-step" data-title="Step 2"></div>
+					<div class="progress-step" data-title="Step 3"></div>
+					<div class="progress-step" data-title="Step 4"></div> <!--progress steps-->
+				   
+				</div>
+				<div  class="form-steps form-step-active ">
+					<h4 class="topic">Personal Details </h4>
+						<label for="name">Your name: </label><br>
+						<input type="text" name="name" id="name" required><br>
+						<label for="name">Your surename: </label><br>
+						<input type="text" name="Sure Name" id="sureName" required><br>
+						<label for="name">Your age: </label><br>
+						<input type="number" name="Age" id="age"><br>
+						<label for="gender">Select your gender</label>
+						<select id="gender" class="select">
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+							<option value="Other">Other</option>
+						</select><br>
+						<label  for="yes or no">Agree with privacy terms: </label>
+						<select class="select" name="Agree with privacy terms" id="agree">
+							<option value="Yes" selected>Yes</option>
+							<option value="No" >No</option>
+						</select><br>
+					   
+						<div class="btn-box">
+							<a href="#" class="btn-next btn">Next</a>
+						</div>
+				</div>
+				<div class="form-steps">
+					<h4 class="topic">Volunteering tasks </h4>
+					<label for="Volunteering">What brings you to this cause : </label><br>
+					<input type="text" name="form2" id="volunteering"><br>
+					<label for="Volunteering">How can you participate in this event : </label><br>
+					<input type="text" name="form2" id="mode"><br>
+					<label for="Volunteering">What are the goals: </label><br>
+					<input type="text" name="form2" id="Goals"><br>
+					<label for="Volunteering">Country : </label><br>
+					<input type="text" name="form2" id="Country" required><br>
+					<label for="Volunteering">Assignment type : </label><br>
+					<input type="text" name="form2" id="type"><br>
+					<div class="btn-box">
+						<a href="#" class="btn-next btn">Next</a>
+						<a href="#" class="btn-prev btn">Previous</a>
+						
+					</div>
+				</div>
+				<div  class="form-steps ">
+					<h4 class="topic">Qualification </h4>
+					<label for="Qualification">Area of study :</label><br>
+					<input type="text" name="form3" id="study"><br>
+					<label for="Qualification">Highest degree :</label><br>
+					<input type="text" name="form3" id="degree"><br>
+					<label for="Qualification">University/Institution :</label><br>
+					<input type="text" name="form3" id="uni"><br>
+					<label for="Qualification">Completion year :</label><br>
+					<input type="number" name="form3" id="year" maxlength="4"><br>
+					<div class="btn-box">
+						<a href="#" class="btn-next btn">Next</a>
+						<a href="#" class="btn-prev btn">Previous</a>       
+						
+					</div>
+				</div>
+				<div class="form-steps">
+					<h4 class="topic">Availability and contact </h4>
+					<label for="Availability">Min hours per week :</label><br>
+					<input type="number" name="form4" id="hours"><br>
+					<label for="Availability">Contact number :</label><br>
+					<input type="tel" name="form4" id="num" maxlength="10"><br>
+					<label for="Availability">email address :</label><br>
+					<input type="email" name="form4" id="add"><br>
+					<div class="btn-box">
+						<a href="#" class="btn-prev btn">Previous</a>   
+					   
+						<button class="Submit" type="submit">Submit</button>
+					
+					</div>
+				</div>
+			   <!--Creating preview box-->
+			</div>
+			<div class="previewBox">
+				<h2 class="live">Preview:</h2>
+				<div id="previewName" class="pre"></div>
+				<div id="previewSureName" class="pre"></div>
+				<div id="previewAge" class="pre"></div>
+				<div id="previewGender" class="pre"></div>
+				<div id="previewAgree" class="pre"></div>
+				<div id="previewVolunteering" class="pre"></div>
+				<div id="previewMode" class="pre"></div>
+				<div id="previewGoals" class="pre"></div>
+				<div id="previewCountry" class="pre"></div>
+				<div id="PreviewType" class="pre"></div>
+				<div id="previewArea" class="pre"></div>
+				<div id="previewDegree" class="pre"></div>
+				<div id="previewUni" class="pre"></div>
+				<div id="previewYear" class="pre"></div>
+				<div id="previewHours" class="pre"></div>
+				<div id="previewNumber" class="pre"></div>
+				<div id="previewEmail" class="pre"></div>
+			</div>
+	
+		</div>    
+		
+		</form>
+	
+<!--footer section of the document-->
+<div id="header_footer">
+	<div class="footer-container">
+		<div id="profile">
+			<a href="myPage.html" target="_blank"><img src="yoshani.jpg" alt="Yoshani Gamage" > <span>Yoshani Gamage(Contributer)</span></a>
+		</div> 
+		<div class="footer-container-name">
+			<h3 class="footer-h3">Health and well-being</h3>
+			<p>&copy; Health and well-being is a collaborative website built by a group of students from IIT-2024</p>
+		</div>
+		<div class="footer-container-contact">
+			<h3 class="footer-h3">Contact Us</h3>
+			<div id="footer">
+				<div class="footerContainer">
+					<div class="socialIcons">
+						<a href="mailto:yrgamage28@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+						<a href="https://www.facebook.com/profile.php?id=100089276306791&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+						<a href="https://www.instagram.com/yoshani_gamage?igsh=MTJzNGlidWJrNHNxbA=="><i class="fa-brands fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<script src="profile.js"></script>
+</body>
+</html>

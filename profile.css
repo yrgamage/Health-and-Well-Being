@@ -1,0 +1,159 @@
+body{
+    background-image: url(pexels-artem-podrez-7233130.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.8);
+    color: black;
+    font-family: sans-serif;
+}
+.containerBox{
+    background: #E7E6F7;
+    width:50%;
+    height: 600px;
+    margin: 8% auto;
+    position: relative;
+    margin-top: 10%;
+    box-shadow: 2px 5px 20px
+    rgba(119,119,119,.5);
+    margin-left: 6%;
+    border-radius: 5px;
+    justify-content:space-between;
+    font-size: small;
+    padding: 10px;
+}   
+
+.previewBox{
+    background-color: #8caedc;
+    width: 40%;
+    height:640px;
+    margin-top: 10%;
+    margin-left: 30px;
+    flex: 1;
+    margin-right: 6%;
+    border-radius: 5px;
+    font-size: small;
+}
+form input{
+    width: 90%;
+    padding: 5px 5px;
+    margin: 5px auto;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.btn-box{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+    
+}
+.btn , .Submit{
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background:linear-gradient(to right,#426FAF,#294769);
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+    justify-self:self;
+    box-shadow: black;
+    font-size: small;
+}
+
+
+.step-row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0-1px 5px-1px #000;
+    position: relative;
+}
+form label{
+    padding: 50px;
+}
+h4{
+    text-align: center;
+}
+
+.progressBar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    margin:20px ;
+
+}
+.progress-step{
+    width:100%;
+    height: 20px;
+    background-color: rgba(119,119,119,.5);
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.progress-step::after{
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100%);
+    padding-top: 5px;
+    padding-left: 50px;
+    font-size: smaller;
+    color: #fa693d;
+
+}
+   
+.progress-step-active{
+    background-color: #294769;
+}
+.form-steps{
+    display: none;
+    transform-origin: top;
+    
+}
+
+.form-step-active{
+    display: block;
+}
+
+    
+.page{
+    display: flex;
+}
+.box{
+    width: 50%;
+    padding: 20px;
+}
+.topic{
+    margin-top: 80px;
+    font-size: larger;
+}
+.select{
+    width: 200px;
+    padding: 10px;
+    font-size: small;
+    align-items: center;
+
+}
+.pre{
+    justify-content: right;
+    margin-left: 20%;
+    padding: 5px;
+    font-size: small;
+}
+.live{
+    text-align: center;
+}

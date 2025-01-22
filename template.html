@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./nav.css">
+    <script src="https://kit.fontawesome.com/e6973791d6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header_nav">
+        
+            <nav>
+                <ul>
+					<li id="logo" style="float: left;"><a href="splashscreen.html" ><img class="logo-img" src="./images/logo1.jpg"></a></li>
+                    <li><a href="home.html" ><i class="fa-solid fa-house" style="color: #f8fadb;"></i> Home</a></li>
+                    <li><a href="gallery.html" ><i class="fa-brands fa-envira" style="color: #f8fadb;" ></i> Gallery</a></li>
+                    <li class="nav-active"><a href="index.html"><i class="fa-solid fa-cart-shopping" style="color: #f8fadb;" ></i> Shop</a></li>
+                    <li><a href="profile.html" ><i class="fa-solid fa-user" style="color: #f8fadb;"></i> Profile</a></li>
+                    <li><a href="sitemap.html" ><i class="fa-solid fa-sitemap" style="color: #f8fadb;"></i> Sitemap</a></li>
+                    <li><a href="feedback.html" ><i class="fa-solid fa-comment" style="color: #f8fadb;"></i> Comments</a></li>
+                    <li><a href="team.html" ><i class="fa-solid fa-address-card" style="color: #f8fadb;"></i> About us</a></li>
+                </ul>
+            </nav>
+    
+    </div>
+   
+    <div class="container">
+        <header>
+            <div class="title">
+                <h4>SHOP</h4>
+            </div>
+            <div class="icon-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>0</span>
+            </div>
+        </header>
+        <div id="contentTab">
+            content in template file
+        </div>
+    </div>
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            Show item here
+        </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">
+                Check Out
+            </button>
+        </div>
+    </div>
+    <!-- Popup box for the empty items -->
+    <div class="popup" id="popup">
+        <img src="images/empty-cart.png">
+        <h2>Cart is Empty</h2>
+        <p>You have to buy at least one item to proceed.</p>
+        <button type="button" id="close">Close</button>
+    </div>
+
+    <div id="checkout-total"></div>
+
+    <div id="header_footer">
+        <div class="footer-container">
+            <div id="profile">
+                <a href="pageEditor1.html"><img src="images/Minon.jpg" alt="Name "> <span>Minon (Contributor)</span></a>
+            </div> 
+            <div class="footer-container-name">
+                <h3 class="footer-h3">Health and well-being</h3>
+                <p>&copy; Health and well-being is a collaborative website built by a group of students from IIT-2024</p>
+            </div>
+            <div class="footer-container-contact">
+                <h3 class="footer-h3">Contact Us</h3>
+                <div id="footer">
+                    <div class="footerContainer">
+                        <div class="socialIcons">
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>

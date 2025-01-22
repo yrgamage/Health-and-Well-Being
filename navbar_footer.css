@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+
+
+}
+
+/* ------------------Styles for the navigation bar.------------------ */
+nav{
+    display: flex;  /* Displaying navigation as flex */
+    align-items: right;
+    flex-wrap: wrap;
+    overflow: hidden; 
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 100000;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:#E7E6F7;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background: #ea9846;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+#header_nav{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(images/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #426faf;
+    
+    
+}
+.container1{
+    padding: 5px 0%;
+}
+
+/* -------------Styles for the logo.------------ */
+#logo{
+    top: 0 !important;
+    left: 0 !important;
+
+}
+.logo-img{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 100%;
+
+}
+
+
+/* style for navigation indication */
+
+.action-nav{
+    color: #fb9779;
+}
+
+/* ---------------------footer---------------------- */
+
+h3{
+    padding: 5%;
+}
+
+
+#header-footer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    margin: 0;
+    padding: 2%;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #294769;
+    backdrop-filter: blur(5px);
+}
+
+
+.footer-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#profile{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fb9779;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#profile img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 100%;
+}
+#profile a{
+    text-decoration: none;
+    color: var(--theme-black);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+#profile:hover{
+    scale: 1.1 !important;     /*increase the size of the button*/
+}
+
+
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #E7E6F7;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 1.5em;
+    color: #294769;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background-color: #294769;
+    transition: 0.5s;
+
+}
+.socialIcons a:hover i{
+    color: #E7E6F7;
+    transition: 0.5s;
+
+}
+

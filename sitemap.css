@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #426faf;
+    color: white;
+}
+
+
+.action-nav{
+    color:#fb9779;
+}
+
+
+.heading{
+    text-align: center;
+    padding-top: 300px;
+    font-size: 60px;
+    background-color: #294769;
+    background-image: url(top1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
+
+
+.sitemap{
+    font-weight:bold;
+    font-size: 17px;    
+}
+
+
+/* Styles for the nodes */
+#box1 rect {
+    fill: #FF7043;
+    transition: fill 0.3s;
+}
+#box2 rect,#box3 rect,#box4 rect,#box5 rect,#box6 rect,#box7 rect {
+    fill: #FFFF66 ;
+    transition: fill 0.3s;
+}
+#home-box1, #home-box3, #about-box1, #about-box3 {
+    fill: #FF33FF ;
+    transition: fill 0.3s;
+}
+#home-box2, #home-box4, #about-box2, #about-box4 {
+    fill: #33FF99 ;
+    transition: fill 0.3s;
+}
+
+
+/* Hover styles for nodes */
+#box1 rect:hover{
+    fill: #ffffff;
+    cursor: pointer;
+}
+#box2 rect:hover, #box3 rect:hover, #box4 rect:hover, #box5 rect:hover, #box6 rect:hover, #box7 rect:hover {
+    fill: #ffffff;
+    cursor: pointer;
+}
+#home-box1 rect:hover, #home-box3 rect:hover, #about-box1 rect:hover, #about-box3 rect:hover {
+    fill: #ffffff ;
+    cursor: pointer;
+}
+#home-box2 rect:hover, #home-box4 rect:hover, #about-box2 rect:hover, #about-box4 rect:hover {
+    fill: #ffffff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+

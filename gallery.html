@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="headerfooter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e6973791d6.js" crossorigin="anonymous"></script>  
+</head>
+<body>
+    <!--Navigation bar -->
+    <div id="header_nav">
+        <div class="container1">
+            <nav>
+                <ul>
+					<li id="logo" style="float: left;"> <a href="splashscreen.html" ><img class="logo-img" src="images\logo1.jpg" alt="logo of site"> </a> </li>
+                    <li> <a href="home.html" > <i class="fa-regular fa-house" style="color: #f8fadb;"></i> Home</a></li>
+                    <li> <a href="gallery.html" class="action-nav" > <i class="fa-brands fa-envira" style="color: #f8fadb;" > </i> Gallery </a> </li>
+                    <li> <a href="index.html" > <i class="fa-solid fa-cart-shopping" style="color: #f8fadb;" > </i> Shop </a> </li>
+                    <li> <a href="profile.html" > <i class="fa-solid fa-user" style="color: #f8fadb;"> </i> Profile </a> </li>
+                    <li> <a href="sitemap.html" > <i class="fa-solid fa-sitemap" style="color: #f8fadb;"> </i> Sitemap </a> </li>
+                    <li> <a href="feedback.html" > <i class="fa-solid fa-comment" style="color: #f8fadb;"></i> Comments </a> </li>
+                    <li> <a href="team.html" > <i class="fa-solid fa-address-card" style="color: #f8fadb;"> </i> About us </a> </li>
+                </ul>
+            </nav>
+        </div>
+    </div>   
+
+       
+    <!-- Page heading -->
+    <div class="heading">
+        <div class="headingText">
+            <h1>GALLERY</h1>
+        </div>
+    </div>
+
+    <!-- Font size and background colour change -->
+    <div class="change">
+        <div class="font">
+            <button id="button1" onclick="fontChange(12)">Zoom out</button>
+            <button id="button2" onclick="fontChange(18)">Default</button>
+            <button id="button3" onclick="fontChange(20)">Zoom In</button>
+        </div>
+
+        <div class="color">
+            <form>
+                <label for="color">Background Colour</label>
+                <select name="Colour" id="color" onchange="backgroundchange(this);">
+                    <option value="#426FAF" selected>Defualt</option>
+                    <option value="#DE3163">Dark Pink</option>
+                    <option value="#1ABC9C">Dark Green</option>
+                    <option value="#DC7633 ">Orange</option>
+                </select>
+            </form>
+            <button id="button" onclick="randomChange()">Random</button>
+        </div>
+    </div>
+    
+    <!-- Gallery images and their descriptions -->
+    <div class="thumbnails">
+        <div class="imageContainer">
+            <h2>Embrace Wellness through Good Health!</h2>
+            <div class="image">
+                <img id="picture1" src="images\img1.jpg" alt="Regular Physical Activities as a Lifestyle Choice" onmouseover="display(this);">
+                <div id="pic1Para">
+                    <h3>Regular Physical activities as a Lifestyle Choice</h3>
+                    <p>Physical activity can make you feel better, function better, and sleep better. Even one session of moderate-to-vigorous physical activity reduces anxiety, and even short bouts of physical activity are beneficial. 
+                        Being physically active also fosters normal growth and development, improves overall health, can reduce the risk of various chronic diseases.  
+                        <br><br> <a class="links" href="https://hoagmedicalgroup.com/articles/exercise-whats-right-for-you/" target="_blank">Explore Further</a> </p>
+                </div>
+            </div>            
+            
+            <div class="image">
+                <img id="picture2" src="images\img2.jpeg" alt="Go Green and Be Healthy" onmouseover="display(this);">
+                <div id="pic2Para">
+                    <h3>Go Green and Be Healthy</h3>
+                    <p>Naturally green foods, especially leafy greens should top your good for you list of nutritious foods. Loaded with vitamins, minerals, fiber, and phytochemicals (plant based compounds),
+                       green foods are typically low in calories. This means you can eat them in abundance without worrying about packing on the pounds—as long as you don’t smother your healthy greens with butter,
+                       fatty cheeses, or creamy sauces and dressings loaded with calories. <br><br> <a class="links" href="https://www.naturemade.com/blogs/health-articles/best-green-foods" target="_blank">Explore Further</a></p>
+                </div>
+            </div>            
+            
+            <div class="image">
+                <img id="picture3" src="images\img3.png" alt="Physical Well-being in Golden years of life" onmouseover="display(this);">
+                <div id="pic3Para">
+                    <h3>Physical Well-being in Golden years of life</h3>
+                    <p>It is actually a myth that old age automatically means poor health. While old age can make adults more inclined to have health problems, it doesn’t mean they cannot put healthy preventative measures in place.
+                        Recent research has found that lack of physical activity when we are older is resulting in half of the physical decline linked to old age.
+                        Regular exercise has also been proven to provide cardiovascular benefits to people over the age of 50 and is a huge contributor to life longevity.
+                        <br><br> <a class="links" href="https://www.agedcareguide.com.au/information/keeping-healthy-physically-in-your-old-age" target="_blank">Explore Further</a></p>
+                </div>
+            </div>
+
+            <div class="image">
+                <img id="picture4" src="images\img7.jpeg" alt="Why Use Medicines?" onmouseover="display(this);">
+                <div id="pic4Para">
+                    <h3>Why Use Medicines?</h3>
+                    <p>Medicines are chemicals or compounds used to cure, halt, or prevent disease; ease symptoms; or help in the diagnosis of illnesses. 
+                        Advances in medicines have enabled doctors to cure many diseases and save lives. Sometimes it seems like there are more medicines than there are diseases, and it can be hard to keep them straight. 
+                        Some can be bought over the counter at pharmacies or other stores. Others require a doctor's prescription. Some are available only in hospitals.
+                        <br><br> <a class="links" href="https://kidshealth.org/en/teens/meds.html" target="_blank">Explore Further</a></p>
+                </div>
+            </div>
+        </div>  
+
+        <!-- Show image and the hidden description when hovering -->
+        <div class="largeImage">
+            <div id="description" ></div>
+            <img id="expandedImage" src="#" alt="Large Image">  
+        </div>	
+        
+        <!-- Gallery images and their descriptions -->
+        <div class="imageContainer">
+            <div class="image">
+                <img id="picture5" src="images/img4.png" alt="Boost Well-being Through Meditation" onmouseover="display(this);">
+                <div id="pic5Para">
+                    <h3>Boost Well-being Through Meditation</h3>
+                    <p>Practicing mindfulness and meditation may help you manage stress and high blood pressure, sleep better, feel more balanced and connected and even lower your risk of heart disease.
+                        Meditation and mindfulness are practices often using breathing, quiet contemplation or sustained focus on something, such as an image,
+                        phrase or sound that help you let go of stress and feel more calm and peaceful. Think of it as a mini-vacation from the stress in your life! 
+                        <br><br> <a class="links" href="https://www.heart.org/en/healthy-living/healthy-lifestyle/mental-health-and-wellbeing/meditation-to-boost-health-and-wellbeing" target="_blank">Explore Further</a></p>
+                </div>
+            </div> 
+
+            <div class="image">
+                <img id="picture6" src="images\img5..jpeg" alt="Doctor Free Life with Healthy Diet" onmouseover="display(this);">
+                <div id="pic6Para">
+                    <h3> Doctor Free Life with Healthy Diet </h3>
+                    <p>A healthy diet is essential for good health and nutrition. It protects you against many chronic noncommunicable diseases, such as heart disease, diabetes and cancer. 
+                        Eating a variety of foods and consuming less salt, sugars and saturated and industrially-produced trans-fats, are essential for healthy diet. A healthy diet comprises a combination of different foods.
+                        <br><br> <a class="links" href="https://www.who.int/initiatives/behealthy/healthy-diet#:~:text=A%20healthy%20diet%20is%20essential,are%20essential%20for%20healthy%20diet." target="_blank">Explore Further</a></p>
+                </div>
+            </div>
+            
+            <div class="image">
+                <img id="picture7" src="images/img6.jpg" alt="Embrace Mental Wellness" onmouseover="display(this);">
+                <div id="pic7Para">
+                    <h3>Embrace Mental Wellness</h3>
+                    <p>Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act, and helps determine how we handle stress, relate to others, and make choices.
+                        Mental health is important at every stage of life, from childhood and adolescence through adulthood. However, with early and consistent treatment often a combination of medication and psychotherapy 
+                        it is possible to manage these conditions, overcome challenges,and lead a meaningful, productive life. Today, there are new tools, evidence based treatments, and social support systems that help people feel better and pursue their goals.
+                        <br> <a class="links" href="https://www.samhsa.gov/mental-health" target="_blank">Explore Further</a></p>
+                </div>
+            </div>
+
+            <div class="image">
+                <img id="picture8" src="images\img9.jpg" alt="Health Checks for a Wealthy Life" onmouseover="display(this);">
+                <div id="pic8Para">
+                    <h3>Health Checks for a Wealthy Life</h3>
+                    <p> Health checks can identify any early signs of health issues. When you have a health check, your doctor will talk with you about your medical history, your familys history of disease and your lifestyle, including your diet, weight, 
+                        physical activity, alcohol use and whether you smoke. Your doctor may include a general health check when you visit for another reason. Your doctor can tell you how often you need health checks. 
+                        <br><br> <a class="links" href="https://www.betterhealth.vic.gov.au/health/servicesandsupport/regular-health-checks" target="_blank">Explore Further</a></p>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+
+    <script src="gallery.js"></script>
+
+
+    <!--Footer section of the document-->
+<div id="header_footer">
+	<div class="footer-container">
+		<div id="profile">
+			<a href="pageEditor 2.html" target="blank"><img src="images\thiseni.jpg" alt="Name "> <span> Thiseni Perera (Contributor)</span></a>
+		</div> 
+		<div class="footer-container-name">
+			<h3 class="footer-h3">Health and well-being</h3>
+			<p>&copy; Health and well-being is a collaborative website built by a group of students from IIT-2024</p>
+		</div>
+		<div class="footer-container-contact">
+			<h3 class="footer-h3">Contact Us</h3>
+			<div id="footer">
+				<div class="footerContainer">
+					<div class="socialIcons">
+						<a href="mailto:;"><i class="fa-solid fa-envelope"></i></a>
+						<a href="https://www.facebook.com/profile.php?id=61556115104366&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>              
+
+
+
+</body>
+</html>
+
+
+      

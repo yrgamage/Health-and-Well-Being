@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <form id="form" action="https://formsubmit.co/probodha616@gmail.com" method="post">
+            <div class="row">
+                <!-- Billing Details -->
+                <div class="col">
+                    <h3 class="title">Billing Address</h3>
+
+                    <div class="input-box">
+                        <label>Full Name: <span>*</span></label>
+                        <input type="text" placeholder="John Deo" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Email: <span>*</span></label>
+                        <input type="email" placeholder="example@example.com" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Address: <span>*</span></label>
+                        <input type="text" placeholder="Street" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>City: <span>*</span></label>
+                        <input type="text" placeholder="Town" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Country: <span>*</span></label>
+                        <input type="text" placeholder="Country" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Zip Code: <span>*</span></label>
+                        <input type="number" required>
+                    </div>
+                </div>
+
+                <!-- Card details -->
+                <div class="col">
+                    <h3 class="title">Card Details</h3>
+
+                    <div class="input-box">
+                        <label>Card Accpted: </label>
+                        <img src="../resources/images/shop/form/cards.png" alt="cards">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Name on Card: <span>*</span></label>
+                        <input type="text" placeholder="John Deo" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Card Number: <span>*</span></label>
+                        <input type="number" placeholder="1111-2222-3333-4444" maxlength="16" required>
+                    </div>
+
+                    <div class="flex">  
+                        <div class="input-box">                    
+                            <label>Expire Month: <span>*</span></label>
+                            <input type="text" placeholder="mm" size="2" maxlength="2" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label>Expire Year: <span>*</span></label>
+                            <input type="text" placeholder="yy" size="2" maxlength="2" required> 
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label>CVV: <span>*</span></label>
+                        <input type="text" maxlength="3" placeholder="Last three digits on back of card" required>
+                    </div>
+
+                    <div id="total_price"></div>
+
+                </div>
+                <!-- <span id="total_price"></span> -->
+                <input type="submit" value="Place Order" class="submit-btn" onclick="displayMsg()">
+            </div>
+        </form>
+    </div>
+
+    <div class="popup" id="popup">
+        <img src="../resources/images/shop/form/tick.png" alt="Done">
+        <h2>Thank You</h2>
+        <p>Your Order has been placed successfully.</p>
+        <button type="button" id="close">Close</button>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
